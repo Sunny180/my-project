@@ -1,11 +1,28 @@
 package com.tom;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Hello {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner sc = new scanner(System.in);
+		Random random = new random();
+		int secret = random.nextInt(10)+1;
+		System.out.println(secret);
+		int num = -1;
+		while(secret != num){
+			System.out.print("Your guess:");
+			num = scanner.nextInt();
+			if(num > secret){
+				System.out.println("lower");
+			}else if(num < secret){
+				System.out.print("highter");
+			}else{
+				System.out.println("Great! The secret number is " + secret);
+			}
+		}
 		
 		
 		Scanner scanner = new Scanner(System.in);
